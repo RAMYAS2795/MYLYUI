@@ -1,0 +1,84 @@
+{{ define "main" }}
+
+
+<div style="background-color: white;text-color:black;">
+    
+    <h2 style="text-align:center;padding-top:100px;">{{ .Site.Params.content.title }}</h2>
+    <div style="padding-left:750px;padding-right:150px;"> 
+      <img src="/Deborah.jpg" />
+      <h3>{{ .Site.Params.content.description11 }}</h3>
+      <h4>{{ .Site.Params.content.description12 }}</h4>
+      <p> {{ .Site.Params.content.description13 }} </p>
+      <p>{{ .Site.Params.content.description14 }}</p>    
+    </div>
+    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    <div style="padding-right:750px;padding-top:200px;">
+      <img style="padding-left:350px;margin-bottom: 1em;display: inline-block;max-height: 20rem;" src="/child-student.jpg"/>
+      <div style="text-align:right;padding-left:150px;">
+      <h3>{{ .Site.Params.content.description21 }}</h3>
+      <h4>{{ .Site.Params.content.description22 }}</h4>
+      <p> {{ .Site.Params.content.description23 }} </p>
+      <p>{{ .Site.Params.content.description24 }}</p>    
+    </div>
+    </div>
+    <div style="padding-left:750px;padding-right:150px;padding-top:200px;">
+      <img src="/school-teacher.png"/>
+      <h3>{{ .Site.Params.content.description31 }}</h3>
+      <h4>{{ .Site.Params.content.description32 }}</h4>
+      <p> {{ .Site.Params.content.description33 }} </p>
+      <p>{{ .Site.Params.content.description34 }}</p>    
+    </div>
+    <div style="padding-right:750px;">
+        <img style="padding:200px;" src="/student.png"/>
+        <div style="text-align:right;padding-left:150px;">
+        <h3>{{ .Site.Params.content.description41 }}</h3>
+        <h4>{{ .Site.Params.content.description42 }}</h4>
+        <p> {{ .Site.Params.content.description43 }} </p>
+        <p>{{ .Site.Params.content.description44 }}</p>    
+      </div>
+      </div>
+  
+  </div>
+  {{ "<!-- topics -->" | safeHTML }}
+  <section class="section bg-gray">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          {{with .Site.Params.topics.title}} <h2 class="section-title">{{ . }}</h2> {{ end }}
+        </div>
+        
+        {{ "<!-- topic-item -->" | safeHTML }}
+        {{ range (where .Site.Pages "Type" "pages") }}
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="{{ .Permalink }}" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="{{ .Params.Icon }} icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+            <p class="mb-0">{{ .Params.Description }}</p>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /topics -->" | safeHTML }}
+
+  {{ if .Site.Params.cta.enable }}
+  {{ "<!-- call to action -->" | safeHTML }}
+  <section class="bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section bg-white shadow text-center">
+            {{ with .Site.Params.cta.title }} <h2 class="mb-4">{{ . }}</h2> {{ end }}
+            {{ with .Site.Params.cta.description }} <p class="mb-4">{{ . }}</p> {{ end }}
+            <a href="{{ with .Site.Params.cta.btnURL}}{{ . | absURL }}{{ end }}"
+              class="btn btn-primary">{{ with .Site.Params.cta.btnText}}{{ . }}{{ end }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /call to action -->" | safeHTML }}
+  {{ end }}
+
+{{ end }}

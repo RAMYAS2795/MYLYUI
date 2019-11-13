@@ -1,0 +1,312 @@
+baseURL = "https://gethugothemes.com/"
+theme = "dot"
+
+# customize color
+[params]
+
+secondaryColor = "#f9f9f9"
+textColor = "#636363"
+textColorDark = "#242738"
+whiteColor = "#000000"
+disableLanguageSwitchingButton = false
+
+
+
+[Languages]
+
+  # English Language
+  [Languages.en]
+  languageName = "En"
+  weight = 1
+  languageCode = "en-us"
+  title = "myly"
+  dateFormat = "2 January 2006"
+  home = "Home"
+  # logo is for all page
+  logo = ""
+  # logo white is for homepage logo, you can use colorful logo too...
+  logoWhite = ""
+  copyright = "The Hugo Documents are copyright © [gethugothemes](https://gethugothemes.com/) 2019."
+
+    # navigation
+    [Languages.en.menu]
+    
+      # Dropdown menu
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Solutions"
+        url = "solutions"
+        hasChildren = true
+ 
+          # Dropdown menu
+          [[Languages.en.menu.main]]
+          parent = "Solutions"
+          weight = 2
+          name = "School App"
+          url = "schoolapp"
+          hasChildren = true
+           
+              [[Languages.en.menu.main]]
+              parent = "School App"
+              weight = 2
+              name = "For School Staff"
+              url = "forschoolstaff"
+
+              [[Languages.en.menu.main]]
+              parent = "School App"
+              weight = 2
+              name = "For Parents"
+              url = "forparents"
+
+          # Dropdown menu
+          [[Languages.en.menu.main]]
+          parent = "Solutions"
+          weight = 2
+          name = "SchoolManagement"
+          url = "schoolmanagement"
+          hasChildren = true
+
+             [[Languages.en.menu.main]]
+              parent = "SchoolManagement"
+              weight = 2
+              name = "AdmissionManagement"
+              url = "solutions/schoolmanagement/admissionmanagement"
+
+              [[Languages.en.menu.main]]
+              parent = "SchoolManagement"
+              weight = 2
+              name = "School Data Management"
+              url = "School Data Management"
+
+              [[Languages.en.menu.main]]
+              parent = "SchoolManagement"
+              weight = 2
+              name = "AttendenceandLeave"
+              url = "solutions/schoolmanagement/attendenceandleave"
+
+              [[Languages.en.menu.main]]
+              parent = "SchoolManagement"
+              weight = 2
+              name = "Fees Management"
+              url = "Fees Management"
+
+              [[Languages.en.menu.main]]
+              parent = "SchoolManagement"
+              weight = 2
+              name = "Exam-Result Management"
+              url = "Exam-Result Management"
+
+              [[Languages.en.menu.main]]
+              parent = "SchoolManagement"
+              weight = 2
+              name = "Timetable Management"
+              url = "Timetable Management"
+
+              [[Languages.en.menu.main]]
+              parent = "SchoolManagement"
+              weight = 2
+              name = "Library Management"
+              url = "Library Management"
+
+              [[Languages.en.menu.main]]
+              parent = "SchoolManagement"
+              weight = 2
+              name = "Franchise Management"
+              url = "Franchise Management"
+
+          # Dropdown menu
+          [[Languages.en.menu.main]]
+          parent = "Solutions"
+          weight = 2
+          name = "Student Security"
+          url = "Student Security"
+          hasChildren = true
+
+             [[Languages.en.menu.main]]
+              parent = "Student Security"
+              weight = 2
+              name = "School Bus GPS Tracking"
+              url = "School Bus GPS Tracking"
+        
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "News"
+        url = "news"
+        
+      # Dropdown menu
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Get started"
+        url = "get-started"
+        hasChildren = true
+
+          [[Languages.en.menu.main]]
+          
+          parent = "Get started"
+          name = "Login"
+          url = "get-started/login"
+          weight = 2
+
+          [[Languages.en.menu.main]]
+          parent = "Get started"
+          name = "Register"
+          url = "get-started/register"
+          weight = 3
+
+    # banner
+    [Languages.en.params.banner]
+      title = "The most trusted School Management App"
+      description = "Easy to use Smartphone based School Management System"
+      description2 = "Everything you need for your school"
+      image = "banner-top.jpg"
+      icon1="sevices-icon/mobile-app.png"
+      
+    # content
+    [Languages.en.params.content]
+      title1 = "How myly Helps"
+      description11 = "Meet Mr.Sharma"
+      description12 = "He owns Quality Kids School."
+      description13 = "He is concerned about data security, financial management and transparency."
+      description14 = "He wants to manage all the information and records of his school on a single school ERP and increase the efficiency of his staff."
+    
+      description21 = "This is Mallika"
+      description22 = "A teacher in Quality Kids School."
+      description23 = "She has to share messages,pictures and news to her students and their parents."
+      description24 = "She wishes to organize essential daily tasks like taking attendence,responding to parents and sending circulars & homework from her school app."
+
+      description31 = "Meet Christina"
+      description32 = "Her child studies in Quality Kids School."
+      description33 = "She is worried about getting timely info & about her child's progress in class."
+      description34 = "She wants to communicate with the teacher,get all info on her parent app and pay fees without having to stand in queues at the school."
+
+      description41 = "There's also Peter"
+      description42 = "He is a student of Quality Kids School."
+      description43 = "He wishes to keep a check on his homework, exams and time-table."
+      description44 = "He wishes to clarify doubts from teachers and compare results with the rest of the class. All through his school app."
+
+    # Topics
+    [Languages.en.params.topics]
+      title = "myly"
+    
+    # call to action
+    [Languages.en.params.cta]
+      enable = true
+      title = "Didn't find an answer to your question?"
+      description = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+      btnText = "contact us"
+      btnURL = "contact"
+
+    # contact
+    [Languages.en.params.contact]
+      title = "Got Any Questions"
+      content = "Submit the form and confirm your email address at <a class='text-primary' href='https://formspree.io/'>Formspree</a> Then add the following lines to contact page YAML Front Matter."
+
+    # footer social icon
+    [[Languages.en.socialIcon]]
+      icon = "ti-facebook"
+      linkURL = "#"
+
+    [[Languages.en.socialIcon]]
+      icon = "ti-twitter-alt"
+      linkURL = "#"
+      
+    [[Languages.en.socialIcon]]
+      icon = "ti-vimeo-alt"
+      linkURL = "#"
+      
+    [[Languages.en.socialIcon]]
+      icon = "ti-instagram"
+      linkURL = "#"
+
+
+
+
+
+  # Franch Language
+  [Languages.fr]
+  languageName = "Fr"
+  weight = 1
+  languageCode = "fr-fr"
+  title = "Dot"
+  dateFormat = "2 January 2006"
+  home = "Aidez-moi"
+  logo = "Dot"
+  copyright = "Les documents Hugo sont sous copyright © gethugothemes 2019."
+
+    # navigation
+    [Languages.fr.menu]
+    
+      [[Languages.fr.menu.main]]
+        weight = 2
+        name = "Faq"
+        url = "fr/faq"
+
+      [[Languages.fr.menu.main]]
+        weight = 2
+        name = "contact"
+        url = "fr/contact"
+
+      # Dropdown menu
+      [[Languages.fr.menu.main]]
+        weight = 2
+        name = "les sujets"
+        hasChildren = true
+
+          [[Languages.fr.menu.main]]
+          parent = "les sujets"
+          name = "Commencer"
+          url = "fr/installation"
+          weight = 2
+
+          [[Languages.fr.menu.main]]
+          parent = "les sujets"
+          name = "Compte et facturation"
+          url = "fr/billing-pricing"
+          weight = 3
+
+          [[Languages.fr.menu.main]]
+          parent = "les sujets"
+          name = "Dépannage"
+          url = "fr/features"
+          weight = 4
+
+    # banner
+    [Languages.fr.params.banner]
+      title = "Comment pouvons nous aider?"
+      description = "Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous."
+      image = "images/banner.jpg"
+      placeholder = "Have a question? Just ask here or enter terms"
+
+    # pages
+    [Languages.fr.params.pages]
+      title = "Parcourir tous les sujets"
+    
+    # call to action
+    [Languages.fr.params.cta]
+      enable = true
+      title = "Vous n'avez pas trouvé de réponse à votre question?"
+      description = "Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé"
+      btnText = "Contactez nous"
+      btnURL = "fr/contact/"
+
+    # contact
+    [Languages.fr.params.contact]
+      title = "Vous avez des questions"
+      content = "Envoyez le formulaire et confirmez votre adresse e-mail à l'adresse <a class='text-primary' href='https://formspree.io/'>Formspree</a> Ajoutez ensuite les lignes suivantes pour contacter la page YAML Front Matter."
+
+    # footer social icon
+    [[Languages.fr.socialIcon]]
+      icon = "ti-facebook"
+      linkURL = "#"
+
+    [[Languages.fr.socialIcon]]
+      icon = "ti-twitter-alt"
+      linkURL = "#"
+      
+    [[Languages.fr.socialIcon]]
+      icon = "ti-vimeo-alt"
+      linkURL = "#"
+      
+    [[Languages.fr.socialIcon]]
+      icon = "ti-instagram"
+      linkURL = "#"
