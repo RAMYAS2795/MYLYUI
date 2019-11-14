@@ -1,313 +1,684 @@
-
-      <!DOCTYPE html>
-      <html lang="{{ with.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        {{ partial "head.html" . }}
-         <body style="background-color:white;">
-                <div class="container">
-                        <div class="web-top-margin">
-                            <div class="news-Press-panel">
-                                <h1 class="intro-heading news-heading">News</h1>
-                                <div class="row text-center">
-                                    <div>
-            
-                    <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img src="../image/the-economic-times.jpg">
-                              <div class="caption">
-                                  <p>School management software app ‘myly’ acquired by US-based investor</p>
-                                  <a href="https://economictimes.indiatimes.com/industry/services/education/school-management-software-app-myly-acquired-by-us-based-investor/articleshow/70607790.cms" target="_blank" class="btn btn-default">More Info</a>
-                             </div>
-                          </div>
-                      </div>
-                      
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail" style="height:319px;">
-                              <img src="../image/myly-Bhamashah-Techno-Fund.png">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>EduCommerce Technologies was chosen in one of the top 7 start-ups in Rajasthan from 700+ companies.</p>
-                                  
-                                  <!-- <a href="#" class="btn btn-default" target="_blank">More Info</a> -->
-                              </div>
-                              
-                          </div>
-                      </div>
-                      
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img src="../image/edtech1000.png">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>myly was listed in the Global EdTech 1000 Companies Transforming Education by EdTech Digest, USA.</p>
-
-                                  <a href="files/2018-SOE-EdTechDigest.pdf" class="btn btn-default" target="_blank">More Info</a>
-
-                              </div>
-                          </div>
-                      </div>
-                      
-                      
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img src="../image/edstart-up.png">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>Disruption 2017: 50 EdStartups That Will Redefine The Education System!</p>
-
-                                  <a href="http://www.scoonews.com/news/final-listing-disruption-2017-50-edstartups-that-will-redefine-the-education-system-in-india-1563" class="btn btn-default" target="_blank">More Info</a>
-
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img id="news-media" src="../image/schoo-assistance.png">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>School Assistance App a Class Apart</p>
-                                  <a id="more-info" href="#popup1" class="btn btn-default">More Info</a>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img src="../image/world-education.png">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>myly awarded the Best Technology Enabled Learning Platform at World Education Summit 2016, Dubai</p>
-
-                                  <a href="http://digitalcreed.in/how-start-up-myly-raised-10000-in-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
-
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img src="../image/page-swype.png">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>EduCommerce technologies owned edtech startup </p>
-
-                                  <a href="http://pageswype.com/index.php/2016/01/12/myly-funding/" target="_blank" class="btn btn-default">More Info</a>
-
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img src="../image/tech-circle.jpg">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>Ed-tech startup myly raises $100K in seed funding</p>
-
-                                  <a href="http://techcircle.vccircle.com/2016/01/07/ed-tech-startup-myly-raises-100k-in-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
-
-                              </div>
-                          </div>
-                      </div>
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60009497-3"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-60009497-3');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Discover myly's news about funding, growth, startups, and collaboration. myly in news, awards won by myly, press releases and media relevant material." />
+    <title>News | Awards | Press Releases - myly</title>
+    <!--<meta name="description" content="myly in news, awards won by myly, press releases and media relevant material" />-->
+    <meta name="keywords" content="myly, news, awards, press releases, media" />
+    <link rel="icon" href="image/favicon.ico" type="image/gif" sizes="16x16">
 
 
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/home-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="../css/flexcss.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/swiper.min.css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () { $(".storyHeroScroll").click(function (a) { a.preventDefault(); $("html,body").animate({ scrollTop: $(".home-tilrPaths").offset().top - 74 }, 2500) }) });
 
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img src="../image/i-am-wire.jpg">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>Communication App for educational institutes myly raises funding</p>
+        $(document).ready(function () {
+            $('.popup, .overlay').hide();
+            $("#more-info").click(function () {
+                $(".popup, .overlay").show(500)
+            });
+            $("#more-info-scoonews").click(function () {
+                $(".popup, .overlay").show(500)
+            });
+        });
 
-                                  <a href="http://www.iamwire.com/2016/01/cloud-based-communication-app-myly-raises-100k-seed-funding/129681" target="_blank" class="btn btn-default">More Info</a>
+        $(document).on("mouseup", ".overlay", function (e) {
+            $(".popup, .overlay").hide(250);
+        });
 
-                              </div>
-                          </div>
-                      </div>
+        $(document).on("mouseup", ".close", function (e) {
+            $(".popup, .overlay").hide(250);
+        });
+
+    </script>
+    
+
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://www.mylyapp.com/",
+        "logo": "https://www.mylyapp.com/image/logo.png",
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement":
+        [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "item":
+        {
+        "@id": "https://www.mylyapp.com/ ",
+        "name": "Home"
+        }
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "item":
+        {
+        "@id": "https://www.mylyapp.com/news/",
+        "name": "News"
+        }
+        }
+        ]
+        }
+    </script>
+</head>
+<style type="text/css">
+    .button {
+        font-size: 1em;
+        padding: 10px;
+        color: #fff;
+        border: 2px solid #06D85F;
+        border-radius: 20px/50px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+
+        .button:hover {
+            background: #06D85F;
+        }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 9999999999;
+    }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    .popup {
+        margin: auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 70%;
+        position: relative;
+        transition: all 5s ease-in-out;
+        top: 3%;
+        bottom: 0;
+        left: 0;
+    }
+
+        .popup h2 {
+            margin-top: 0;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            z-index: 120;
+            opacity: 1 !important;
+        }
+
+            .popup .close:hover {
+                color: #06D85F;
+            }
+
+        .popup .content {
+            max-height: 30%;
+            overflow: auto;
+        }
+
+        .popup.popup-scoo {
+            top: 20%;
+        }
+
+    @media screen and (max-width: 700px) {
+        .popup {
+            width: 90%;
+            top: 30%;
+        }
+    }
+
+    @media screen and (min-width: 420px) and (max-width: 500px) {
+        .popup {
+            width: 90%;
+            top: 6%;
+        }
+
+            .popup.popup-scoo {
+                top: 40%;
+            }
+    }
+</style>
+<body>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <img src="../image/news-img.jpg" />
+        </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+        <div class="popup popup-scoo">
+            <a class="close" href="#">&times;</a>
+            <img src="../image/scoo-popup.png" />
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div class="-logn"></div>
+        <header class="header">
+            <div class="headerWidth">
+                <div class="grid -layout-auto">
+                    <div class="col header-left"> <a href="/home" class="logoLink"><img src="../image/logo.png" alt="myly logo"></a> </div>
+                    <div class="col header-right">
+                        <div class="navToggle">
+                            <svg height="24" viewBox="0 0 24 24" width="24" stroke-width="2" stroke-linecap="round" class="navToggle-icon -open">
+                                <line x1="2" x2="22" y1="6.5" y2="6.5"></line>
+                                <line x1="7" x2="22" y1="12.5" y2="12.5"></line>
+                                <line x1="2" x2="22" y1="18.5" y2="18.5"></line>
+                                <path d="M50,50 L100,100" style="stroke:#660000; fill:none;" />
+                            </svg> <img src="../image/cancel.png" class="navToggle-icon -close" />
+                        </div>
+                        <div class="nav">
+                            <nav role=navigation class=nav-menu>
+                                <ul class=sb-menu-center>
+                                    <li id=sb-menu-app-li class=dropdown>
+                                        <a class=dropdown-toggle data-toggle=dropdown href=#>Solutions</a>
+                                        <script type="text/javascript">
+                                            /*<![CDATA[*/
+                                            $("ul.sb-menu-center li#sb-menu-app-li").hover(function () {
+                                                $(this).find(".dropdown-menu").stop(true, true).delay(200).fadeIn(500);
+                                                $(this).addClass('open');
+                                            });
+                                            /*]]>*/
+                                            $(document).click(function (e) {
+                                                //e.stopPropagation();
+                                                var container = $("li#sb-menu-app-li");
+                                                //check if the clicked area is dropDown or not
+                                                if (container.has(e.target).length == 0) {
+                                                    $(container).find(".dropdown-menu").hide();
+                                                    $(container).parent('.dropdown').removeClass('open');
+                                                }
+                                            });
+                                        </script>
+                                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                $("li.sub-menu > a").click(function () {
+                                                    if ($(this).parent().hasClass('openSub')) {
+                                                        $(this).parent().removeClass('openSub');
+                                                        $(this).next('.d').slideUp();
+                                                    } else {
+                                                        $("li.sub-menu").find('.d').slideUp();
+                                                        $("li.sub-menu").removeClass('openSub');
+                                                        $(this).parent().addClass('openSub');
+                                                        $(this).next('.d').slideDown();
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                        <ul id=sb-menu-app class="dropdown-menu dropdown-menu-center">
+                                            <li class=sub-menu>
+                                                <a href=javascript:;>School App</a>
+                                                <ol class=d>
+                                                    <li class=li-option-base-erp><a href=/myly-admin-app-for-teachers>For School Staff </a></li>
+                                                    <li class=li-option-base-erp><a href=/myly-app-for-parents-and-students>For Parents </a></li>
+                                                </ol>
+                                            </li>
+                                            <li class=sub-menu>
+                                                <a href=javascript:;>School Management</a>
+                                                <ol class=d>
+                                                    <!--<li class=li-option-base-erp><a href=/admission-crm>Admission CRM</a></li>-->
+                                                    <li class=li-option-base-erp><a href=/admission>Admission Management</a></li>
+                                                    <li class=li-option-base-erp><a href=/base-erp>School Data Management</a></li>
+                                                    <li class=li-option-base-erp><a href=/Attendance-and-Leave>Attendance &amp; Leave</a></li>
+                                                    <li class=li-option-base-erp><a href=/fees> Fees Management </a></li>
+                                                    <li class=li-option-base-erp><a href=/exam-result> Exam-Result Management </a></li>
+                                                    <li class=li-option-base-erp><a href=/time-table> Timetable Management </a></li>
+                                                    <li class=li-option-base-erp><a href=/library> Library Management </a></li>
+                                                    <li class=li-option-base-erp><a href=/franchisee> Franchisee Management </a></li>
+                                                </ol>
+                                            </li>
+                                            <!--											<li class=sub-menu>
+                                                                    <a href=javascript:;>Admission CRM</a>
+                                                                </li>-->
+                                            <li class=sub-menu>
+                                                <a href=javascript:;>Student Security</a>
+                                                <ol class=d>
+                                                    <li class=li-option-base-erp><a href=/transport-solution>School Bus GPS Tracking</a></li>
+                                                   <!-- <li class=li-option-base-erp><a href=#>School Bus RFID Attendance</a></li>-->
+                                                </ol>
+                                            </li>
+                                            <!--											<li class=sub-menu>
+                                                                    <a href=javascript:;>Learning</a>
+                                                                    <ol class=d>
+                                                                        <li class=li-option-base-erp><a href=/online-assessment>Online Assessment</a></li>
+                                                                        <li class=li-option-base-erp><a href=#>Student Portal </a></li>
+                                                                        <!--<li class=li-option-base-erp><a href=#>Learning Management System</a></li>
+                                                                        <li class=li-option-base-erp><a href=#>Third party content integration</a></li>
+                                                                    </ol>
+                                                                </li>-->
+                                        </ul>
+                                    </li>
+                                    <li><a href=/news>News</a></li>
+                                    <li><a href=/blog target=_blank>Blog</a></li>
+                                    <li>
+                                        <div class=nav-callout>
+                                            <div class=dropdown>
+                                                <button class="-options -secondary -less-padding dropdown-toggle btn-grad" type=button data-toggle=dropdown> Get started <span class=caret></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-btn" data-dropdown-in=flipInX data-dropdown-out=flipOutX>
+                                                    <li><a href=https://web.mylyapp.com/ target=_blank>Login</a></li>
+                                                    <li><a href="/register">Register</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-underline"></div>
+        </header>
+        <div class="container">
+            <div class="web-top-margin">
+                <div class="news-Press-panel">
+                    <h1 class="intro-heading news-heading">News</h1>
+                    <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+                    <div class="row text-center">
+                        <div>
+                          <div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img src="../image/the-economic-times.jpg">
+                                    <div class="caption">
+                                        <p>School management software app ‘myly’ acquired by US-based investor</p>
+                                        <a href="https://economictimes.indiatimes.com/industry/services/education/school-management-software-app-myly-acquired-by-us-based-investor/articleshow/70607790.cms" target="_blank" class="btn btn-default">More Info</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+							<div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail" style="height:319px;">
+                                    <img src="../image/myly-Bhamashah-Techno-Fund.png">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>EduCommerce Technologies was chosen in one of the top 7 start-ups in Rajasthan from 700+ companies.</p>
+										
+                                        <!-- <a href="#" class="btn btn-default" target="_blank">More Info</a> -->
+                                    </div>
+									
+                                </div>
+                            </div>
+							
+							<div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img src="../image/edtech1000.png">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>myly was listed in the Global EdTech 1000 Companies Transforming Education by EdTech Digest, USA.</p>
+
+                                        <a href="files/2018-SOE-EdTechDigest.pdf" class="btn btn-default" target="_blank">More Info</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+							
+							<div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img src="../image/edstart-up.png">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>Disruption 2017: 50 EdStartups That Will Redefine The Education System!</p>
+
+                                        <a href="http://www.scoonews.com/news/final-listing-disruption-2017-50-edstartups-that-will-redefine-the-education-system-in-india-1563" class="btn btn-default" target="_blank">More Info</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img id="news-media" src="../image/schoo-assistance.png">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>School Assistance App a Class Apart</p>
+                                        <a id="more-info" href="#popup1" class="btn btn-default">More Info</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img src="../image/world-education.png">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>myly awarded the Best Technology Enabled Learning Platform at World Education Summit 2016, Dubai</p>
+
+                                        <a href="http://digitalcreed.in/how-start-up-myly-raised-10000-in-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img src="../image/page-swype.png">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>EduCommerce technologies owned edtech startup </p>
+
+                                        <a href="http://pageswype.com/index.php/2016/01/12/myly-funding/" target="_blank" class="btn btn-default">More Info</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img src="../image/tech-circle.jpg">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>Ed-tech startup myly raises $100K in seed funding</p>
+
+                                        <a href="http://techcircle.vccircle.com/2016/01/07/ed-tech-startup-myly-raises-100k-in-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
+
+                                    </div>
+                                </div>
+                            </div>
 
 
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                          <div class="thumbnail">
-                              <img src="../image/the-economic-times.jpg">
-                              <div class="caption">
-                                  <!--<h3>Feature Label</h3>-->
-                                  <p>Ed-tech focused mobile app myly raises $100,000 in seed funding</p>
 
-                                  <a href="https://economictimes.indiatimes.com/small-biz/startups/ed-tech-focused-mobile-app-myly-raises-100000-in-seed-funding/articleshow/50473261.cms" target="_blank" class="btn btn-default">More Info</a>
+                            <div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img src="../image/i-am-wire.jpg">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>Communication App for educational institutes myly raises funding</p>
 
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/scoo-news-logo.png">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>Why schools need Apps and ERPs: Gaurav Mundra, CEO, myly App</p>
+                                        <a href="http://www.iamwire.com/2016/01/cloud-based-communication-app-myly-raises-100k-seed-funding/129681" target="_blank" class="btn btn-default">More Info</a>
 
-                              <a id="more-info-scoonews" href="#popup2" class="btn btn-default">More Info</a>
-
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/ein-logo.png">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>"myly-School Mobile App" launches its Premium version to connect Schools, Teachers &amp; Parents</p>
-
-                              <a href="http://www.einpresswire.com/article/339451337/myly-school-mobile-app-launches-its-premium-version-to-connect-schools-teachers-parents" target="_blank" class="btn btn-default">More Info</a>
-
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/img-star.png">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>How Madhup Bansal and Gaurav Mundra Started myly</p>
-
-                              <a href="http://therodinhoods.com/forum/topics/how-i-started-my-company-over-masala-chai-and-kids" target="_blank" class="btn btn-default">More Info</a>
-
-                          </div>
-                      </div>
-                  </div>
-
-             
+                                    </div>
+                                </div>
+                            </div>
 
 
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/dc.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>How start-up myly raised $100,000 in seed funding</p>
+                            <div class="col-md-3 col-sm-6 hero-feature">
+                                <div class="thumbnail">
+                                    <img src="../image/the-economic-times.jpg">
+                                    <div class="caption">
+                                        <!--<h3>Feature Label</h3>-->
+                                        <p>Ed-tech focused mobile app myly raises $100,000 in seed funding</p>
 
-                              <a href="http://digitalcreed.in/how-start-up-myly-raised-10000-in-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
+                                        <a href="https://economictimes.indiatimes.com/small-biz/startups/ed-tech-focused-mobile-app-myly-raises-100000-in-seed-funding/articleshow/50473261.cms" target="_blank" class="btn btn-default">More Info</a>
 
-                          </div>
-                      </div>
-                  </div>
+                                    </div>
+                                </div>
+                            </div>
+							
+							<div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/scoo-news-logo.png">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>Why schools need Apps and ERPs: Gaurav Mundra, CEO, myly App</p>
 
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/dsa.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>India Dealbok: myly raise seed funding</p>
+                                    <a id="more-info-scoonews" href="#popup2" class="btn btn-default">More Info</a>
 
-                              <a href="http://www.dealstreetasia.com/stories/india-dealbok-times-internet-buys-viral-shots-myly-and-infurnia-raise-seed-funding-26238/" target="_blank" class="btn btn-default">More Info</a>
+                                </div>
+                            </div>
+                        </div>
 
-                          </div>
-                      </div>
-                  </div>
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/ein-logo.png">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>"myly-School Mobile App" launches its Premium version to connect Schools, Teachers &amp; Parents</p>
 
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/gad-360.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>India funding roundup: myly</p>
+                                    <a href="http://www.einpresswire.com/article/339451337/myly-school-mobile-app-launches-its-premium-version-to-connect-schools-teachers-parents" target="_blank" class="btn btn-default">More Info</a>
 
-                              <a href="http://gadgets.ndtv.com/apps/news/india-funding-roundup-confirmtkt-qdesq-freshmenu-pitstop-myly-787344" target="_blank" class="btn btn-default">More Info</a>
+                                </div>
+                            </div>
+                        </div>
 
-                          </div>
-                      </div>
-                  </div>
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="image/img-star.png">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>How Madhup Bansal and Gaurav Mundra Started myly</p>
 
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/inc-42.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>App for school-parent interaction, myly, raises seed funding</p>
+                                    <a href="http://therodinhoods.com/forum/topics/how-i-started-my-company-over-masala-chai-and-kids" target="_blank" class="btn btn-default">More Info</a>
 
-                              <a href="http://inc42.com/flash-feed/myly-raises-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
+                                </div>
+                            </div>
+                        </div>
 
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/vccircle.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>Ed-tech startup myly raises $100K in seed funding</p>
-
-                              <a href="http://www.vccircle.com/news/technology/2016/01/07/ed-tech-startup-myly-raises-100k-seed-funding" target="_blank" class="btn btn-default">More Info</a>
-
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/crunch-base.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>myly - EduCommerce Technologies</p>
-
-                              <a href="https://www.crunchbase.com/organization/myly-educommerce-technologies#/entity" target="_blank" class="btn btn-default">More Info</a>
-
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/knowstartup.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>Jaipur based ed-tech startup myly raises $100,000 in seed funding</p>
-
-                              <a href="http://knowstartup.com/2016/01/myly-raises-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
-
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/thetechportal.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>Ed-Tech mobile app myly Gets seeded with $100K</p>
-
-                              <a href="http://thetechportal.in/2016/01/07/myly/" target="_blank" class="btn btn-default">More Info</a>
-
-                          </div>
-                      </div>
-                  </div>
+                   
 
 
-                 
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/dc.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>How start-up myly raised $100,000 in seed funding</p>
 
-                  <div class="col-md-3 col-sm-6 hero-feature">
-                      <div class="thumbnail">
-                          <img src="../image/nextbigwhat.jpg">
-                          <div class="caption">
-                              <!--<h3>Feature Label</h3>-->
-                              <p>myly mobile app raises $100,000 in seed funding</p>
+                                    <a href="http://digitalcreed.in/how-start-up-myly-raised-10000-in-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
 
-                              <a href="http://www.nextbigwhat.com/edtech-mobile-app-myly-raises-100000-seed-funding-297/" target="_blank" class="btn btn-default">More Info</a>
+                                </div>
+                            </div>
+                        </div>
 
-                          </div>
-                      </div>
-                  </div>                                 
-                  </div>          
-          </body>          
-          {{- partial "footer.html" . -}}
-        </body>
-      </html>
-      
-  </body>
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/dsa.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>India Dealbok: myly raise seed funding</p>
+
+                                    <a href="http://www.dealstreetasia.com/stories/india-dealbok-times-internet-buys-viral-shots-myly-and-infurnia-raise-seed-funding-26238/" target="_blank" class="btn btn-default">More Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/gad-360.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>India funding roundup: myly</p>
+
+                                    <a href="http://gadgets.ndtv.com/apps/news/india-funding-roundup-confirmtkt-qdesq-freshmenu-pitstop-myly-787344" target="_blank" class="btn btn-default">More Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/inc-42.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>App for school-parent interaction, myly, raises seed funding</p>
+
+                                    <a href="http://inc42.com/flash-feed/myly-raises-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/vccircle.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>Ed-tech startup myly raises $100K in seed funding</p>
+
+                                    <a href="http://www.vccircle.com/news/technology/2016/01/07/ed-tech-startup-myly-raises-100k-seed-funding" target="_blank" class="btn btn-default">More Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/crunch-base.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>myly - EduCommerce Technologies</p>
+
+                                    <a href="https://www.crunchbase.com/organization/myly-educommerce-technologies#/entity" target="_blank" class="btn btn-default">More Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/knowstartup.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>Jaipur based ed-tech startup myly raises $100,000 in seed funding</p>
+
+                                    <a href="http://knowstartup.com/2016/01/myly-raises-seed-funding/" target="_blank" class="btn btn-default">More Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/thetechportal.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>Ed-Tech mobile app myly Gets seeded with $100K</p>
+
+                                    <a href="http://thetechportal.in/2016/01/07/myly/" target="_blank" class="btn btn-default">More Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+
+                        <div class="col-md-3 col-sm-6 hero-feature">
+                            <div class="thumbnail">
+                                <img src="../image/nextbigwhat.jpg">
+                                <div class="caption">
+                                    <!--<h3>Feature Label</h3>-->
+                                    <p>myly mobile app raises $100,000 in seed funding</p>
+
+                                    <a href="http://www.nextbigwhat.com/edtech-mobile-app-myly-raises-100000-seed-funding-297/" target="_blank" class="btn btn-default">More Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                            
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+
+                <br>
+                
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer-section">
+                    <div class="footer-right-side">
+                        <div class="footer-logo"><img src="../image/logo1.png"></div>
+                        <a class="trm-policy" href="/privacy">Privacy Policy</a> <span style="float: left;padding: 0 5px;">|</span> <a class="trm-policy" href="/terms">Terms Of Use</a>
+                        <div class="clearfix"></div>
+                        <p> © 2018-19 EduCommerce Technologies Pvt. Ltd. All rights reserved. </p>
+                    </div>
+                    <div class="footer-right -space-v-1">
+                        <div class="footer-info">
+                            <ul id="menu-footer" class="links">
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/career">Careers</a></li>
+                                    <li><a href="/be-a-partner">Be a partner</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a id="facebook" class="social-icon" href="https://www.facebook.com/mylyapp" target="_blank"></a></li>
+                                <li><a id="google-plus" class="social-icon" href="https://plus.google.com/+Mylyapp/posts" target="_blank"></a></li>
+                                <li><a id="twitter" class="social-icon" href="https://twitter.com/mylyapp" target="_blank"></a></li>
+                                <li><a id="linkedin" class="social-icon" href="https://www.linkedin.com/company/mylyapp" target="_blank"></a></li>
+                                <li><a id="youtube" class="social-icon" href="https://www.youtube.com/channel/UCoqMaXL11uSeUL4VEoYDQtg" target="_blank"></a></li>
+                                <li><a id="pinterest" class="social-icon" href="https://www.pinterest.com/mylyapp/technologies-in-schools/" target="_blank"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="text/javascript" src="../js/wow.js"></script>
+    <script type="text/javascript" src="../js/tutorial.js"></script>
+    <script type='text/javascript' src='../js/nav.js?ver=1.14'></script>
+    <script type="text/javascript"> window._mfq = window._mfq || []; (function () { var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true; mf.src = "//cdn.mouseflow.com/projects/dc4c6f71-6939-4fae-92c2-4a4e2d630461.js"; document.getElementsByTagName("head")[0].appendChild(mf); })();    </script>
+    <!--<script type="text/javascript">
+
+        var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+
+        { widgetcode: "f18f38b820b92ba6903f5c6792a8f270bbfcfeb016580c586990eb30af803081", values: {}, ready: function () { } };
+
+        var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+
+        s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
+
+    </script>-->
+</body>
 </html>
