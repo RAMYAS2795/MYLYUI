@@ -56,21 +56,8 @@ link = "#"
     # navigation
     [Languages.en.menu]
     
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "News"
-        url = "news"
-        
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "Admission"
-        url = "admission"
+      
        
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "Attendance-and-Leave"
-        url = "attendenceandleave"
-
       # Dropdown menu
       [[Languages.en.menu.main]]
         weight = 2

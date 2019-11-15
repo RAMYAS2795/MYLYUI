@@ -1,35 +1,14 @@
-
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang=en-US>  {{ partial "head.html" . }}
+<html prefix="og: http://ogp.me/ns#" lang=en-US>
+{{ partial "homeheadscript.html" . }}
+{{ partial "head.html" . }}
 <body>
-  {{ if .IsHome }}
-  {{ "<!-- header -->" | safeHTML }}
-  <header class="hero-section overlay bg-cover banner" data-background="{{ .Site.Params.banner.image | absURL }}">
-    <div class="container mb-100">
-      {{ "<!-- homeheadscript -->" | safeHTML }}
-      {{ partial "homeheadscript.html" . }}
-      {{ "<!-- navigation -->" | safeHTML }}
-      {{ partial "navigation.html" . }}
-      {{ "<!-- /navigation -->" | safeHTML }}
-    </div>
-    {{ partial "banner.html" . }}
-  </header>
-  {{ "<!-- /header -->" | safeHTML }}
-  {{ else }}
-  {{ "<!-- navigation -->" | safeHTML }}
-  <header class="shadow-bottom sticky-top bg-white">
-    <div class="container">
-      {{ partial "navigation.html" . }}
-    </div>
-  </header>
-  {{ "<!-- /navigation -->" | safeHTML }}
-  {{ end }}
-  <div id="content">
-    {{- block "main" . }}{{- end }}
-  </div>
-  {{- partial "footer.html" . -}}
-  {{ "<!-- homefooterscript -->" | safeHTML }}
-  {{partial "homefooterscript.html" . }}
+<div class=site-page>
+{{ partial "navigation.html" . }}
+{{ partial "banner.html" . }}
+{{- block "main" . }}{{- end }}
+{{ partial "footer.html" . }}
+</div>
+{{ partial "homefooterscript.html" . }}
 </body>
-
 </html>

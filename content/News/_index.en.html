@@ -9,7 +9,7 @@
     <title>News | Awards | Press Releases - myly</title>
     <!--<meta name="description" content="myly in news, awards won by myly, press releases and media relevant material" />-->
     <meta name="keywords" content="myly, news, awards, press releases, media" />
-    <link rel="icon" href="image/favicon.ico" type="image/gif" sizes="16x16">
+    <link rel="icon" href="../image/favicon.ico" type="image/gif" sizes="16x16">
 
 
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
@@ -18,7 +18,7 @@
     <link href="../css/home-responsive.css" rel="stylesheet" type="text/css" />
     <link href="../css/flexcss.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/swiper.min.css" />
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="../css/animate.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -197,121 +197,7 @@
 
     <div id="wrapper">
         <div class="-logn"></div>
-        <header class="header">
-            <div class="headerWidth">
-                <div class="grid -layout-auto">
-                    <div class="col header-left"> <a href="/home" class="logoLink"><img src="../image/logo.png" alt="myly logo"></a> </div>
-                    <div class="col header-right">
-                        <div class="navToggle">
-                            <svg height="24" viewBox="0 0 24 24" width="24" stroke-width="2" stroke-linecap="round" class="navToggle-icon -open">
-                                <line x1="2" x2="22" y1="6.5" y2="6.5"></line>
-                                <line x1="7" x2="22" y1="12.5" y2="12.5"></line>
-                                <line x1="2" x2="22" y1="18.5" y2="18.5"></line>
-                                <path d="M50,50 L100,100" style="stroke:#660000; fill:none;" />
-                            </svg> <img src="../image/cancel.png" class="navToggle-icon -close" />
-                        </div>
-                        <div class="nav">
-                            <nav role=navigation class=nav-menu>
-                                <ul class=sb-menu-center>
-                                    <li id=sb-menu-app-li class=dropdown>
-                                        <a class=dropdown-toggle data-toggle=dropdown href=#>Solutions</a>
-                                        <script type="text/javascript">
-                                            /*<![CDATA[*/
-                                            $("ul.sb-menu-center li#sb-menu-app-li").hover(function () {
-                                                $(this).find(".dropdown-menu").stop(true, true).delay(200).fadeIn(500);
-                                                $(this).addClass('open');
-                                            });
-                                            /*]]>*/
-                                            $(document).click(function (e) {
-                                                //e.stopPropagation();
-                                                var container = $("li#sb-menu-app-li");
-                                                //check if the clicked area is dropDown or not
-                                                if (container.has(e.target).length == 0) {
-                                                    $(container).find(".dropdown-menu").hide();
-                                                    $(container).parent('.dropdown').removeClass('open');
-                                                }
-                                            });
-                                        </script>
-                                        <script type="text/javascript">
-                                            $(document).ready(function () {
-                                                $("li.sub-menu > a").click(function () {
-                                                    if ($(this).parent().hasClass('openSub')) {
-                                                        $(this).parent().removeClass('openSub');
-                                                        $(this).next('.d').slideUp();
-                                                    } else {
-                                                        $("li.sub-menu").find('.d').slideUp();
-                                                        $("li.sub-menu").removeClass('openSub');
-                                                        $(this).parent().addClass('openSub');
-                                                        $(this).next('.d').slideDown();
-                                                    }
-                                                });
-                                            });
-                                        </script>
-                                        <ul id=sb-menu-app class="dropdown-menu dropdown-menu-center">
-                                            <li class=sub-menu>
-                                                <a href=javascript:;>School App</a>
-                                                <ol class=d>
-                                                    <li class=li-option-base-erp><a href=/myly-admin-app-for-teachers>For School Staff </a></li>
-                                                    <li class=li-option-base-erp><a href=/myly-app-for-parents-and-students>For Parents </a></li>
-                                                </ol>
-                                            </li>
-                                            <li class=sub-menu>
-                                                <a href=javascript:;>School Management</a>
-                                                <ol class=d>
-                                                    <!--<li class=li-option-base-erp><a href=/admission-crm>Admission CRM</a></li>-->
-                                                    <li class=li-option-base-erp><a href=/admission>Admission Management</a></li>
-                                                    <li class=li-option-base-erp><a href=/base-erp>School Data Management</a></li>
-                                                    <li class=li-option-base-erp><a href=/Attendance-and-Leave>Attendance &amp; Leave</a></li>
-                                                    <li class=li-option-base-erp><a href=/fees> Fees Management </a></li>
-                                                    <li class=li-option-base-erp><a href=/exam-result> Exam-Result Management </a></li>
-                                                    <li class=li-option-base-erp><a href=/time-table> Timetable Management </a></li>
-                                                    <li class=li-option-base-erp><a href=/library> Library Management </a></li>
-                                                    <li class=li-option-base-erp><a href=/franchisee> Franchisee Management </a></li>
-                                                </ol>
-                                            </li>
-                                            <!--											<li class=sub-menu>
-                                                                    <a href=javascript:;>Admission CRM</a>
-                                                                </li>-->
-                                            <li class=sub-menu>
-                                                <a href=javascript:;>Student Security</a>
-                                                <ol class=d>
-                                                    <li class=li-option-base-erp><a href=/transport-solution>School Bus GPS Tracking</a></li>
-                                                   <!-- <li class=li-option-base-erp><a href=#>School Bus RFID Attendance</a></li>-->
-                                                </ol>
-                                            </li>
-                                            <!--											<li class=sub-menu>
-                                                                    <a href=javascript:;>Learning</a>
-                                                                    <ol class=d>
-                                                                        <li class=li-option-base-erp><a href=/online-assessment>Online Assessment</a></li>
-                                                                        <li class=li-option-base-erp><a href=#>Student Portal </a></li>
-                                                                        <!--<li class=li-option-base-erp><a href=#>Learning Management System</a></li>
-                                                                        <li class=li-option-base-erp><a href=#>Third party content integration</a></li>
-                                                                    </ol>
-                                                                </li>-->
-                                        </ul>
-                                    </li>
-                                    <li><a href=/news>News</a></li>
-                                    <li><a href=/blog target=_blank>Blog</a></li>
-                                    <li>
-                                        <div class=nav-callout>
-                                            <div class=dropdown>
-                                                <button class="-options -secondary -less-padding dropdown-toggle btn-grad" type=button data-toggle=dropdown> Get started <span class=caret></span></button>
-                                                <ul class="dropdown-menu dropdown-menu-btn" data-dropdown-in=flipInX data-dropdown-out=flipOutX>
-                                                    <li><a href=https://web.mylyapp.com/ target=_blank>Login</a></li>
-                                                    <li><a href="/register">Register</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-underline"></div>
-        </header>
+        {{ partial "navigation.html" . }}
         <div class="container">
             <div class="web-top-margin">
                 <div class="news-Press-panel">
@@ -631,54 +517,9 @@
                 </div>
             </div>
         </div>
-        <footer id="footer" class="footer">
-            <div class="container">
-                <div class="footer-section">
-                    <div class="footer-right-side">
-                        <div class="footer-logo"><img src="../image/logo1.png"></div>
-                        <a class="trm-policy" href="/privacy">Privacy Policy</a> <span style="float: left;padding: 0 5px;">|</span> <a class="trm-policy" href="/terms">Terms Of Use</a>
-                        <div class="clearfix"></div>
-                        <p> © 2018-19 EduCommerce Technologies Pvt. Ltd. All rights reserved. </p>
-                    </div>
-                    <div class="footer-right -space-v-1">
-                        <div class="footer-info">
-                            <ul id="menu-footer" class="links">
-                                <li><a href="/about">About</a></li>
-                                <li><a href="/career">Careers</a></li>
-                                    <li><a href="/be-a-partner">Be a partner</a></li>
-                                <li><a href="/contact">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-social">
-                            <ul>
-                                <li><a id="facebook" class="social-icon" href="https://www.facebook.com/mylyapp" target="_blank"></a></li>
-                                <li><a id="google-plus" class="social-icon" href="https://plus.google.com/+Mylyapp/posts" target="_blank"></a></li>
-                                <li><a id="twitter" class="social-icon" href="https://twitter.com/mylyapp" target="_blank"></a></li>
-                                <li><a id="linkedin" class="social-icon" href="https://www.linkedin.com/company/mylyapp" target="_blank"></a></li>
-                                <li><a id="youtube" class="social-icon" href="https://www.youtube.com/channel/UCoqMaXL11uSeUL4VEoYDQtg" target="_blank"></a></li>
-                                <li><a id="pinterest" class="social-icon" href="https://www.pinterest.com/mylyapp/technologies-in-schools/" target="_blank"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {{ partial "footer.html" . }}
     </div>
     
-    <script type="text/javascript" src="../js/wow.js"></script>
-    <script type="text/javascript" src="../js/tutorial.js"></script>
-    <script type='text/javascript' src='../js/nav.js?ver=1.14'></script>
-    <script type="text/javascript"> window._mfq = window._mfq || []; (function () { var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true; mf.src = "//cdn.mouseflow.com/projects/dc4c6f71-6939-4fae-92c2-4a4e2d630461.js"; document.getElementsByTagName("head")[0].appendChild(mf); })();    </script>
-    <!--<script type="text/javascript">
-
-        var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
-
-        { widgetcode: "f18f38b820b92ba6903f5c6792a8f270bbfcfeb016580c586990eb30af803081", values: {}, ready: function () { } };
-
-        var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
-
-        s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
-
-    </script>-->
+   {{ partial "pagefooter.html" . }}
 </body>
 </html>
