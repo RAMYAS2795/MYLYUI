@@ -1,0 +1,60 @@
+{{ "<!-- banner -->" | safeHTML }}
+<div id=hero class="section -top -storyHero">
+    
+
+        <!-- Javascript -->
+        {{ $currentNode := . }}
+        {{ $currentNode.Scratch.Set "pages" .Site.Pages }}
+        {{ $pages := ($currentNode.Scratch.Get "pages") }}
+        <script>
+            $(function() {
+            var projects = [
+                {{ range $pages }}
+                {
+                    value: "{{ .Title }}",
+                    label: "{{ .Title }}",
+                    url:"{{ .Permalink }}"
+                },
+                {{ end }}
+            ];
+            </script>
+                    <div class="container">
+                        <div class="content -medium -space-v-2">
+                            <h1 class="heading-top">
+                                The most trusted <br>
+                                School Management App
+                            </h1>
+                            <h3 class="heading-top-bot">
+                                Easy to use Smartphone based School Management System<br><br>
+                                Everything you need for your school <br><br>
+                            </h3>
+                            <div class="bannerIconsRow">
+                                <div class="bannerIconBlock">
+                                    <img src="image/services-icon/mobile-app.png" alt="School App">
+                                    <h5>School App</h5>
+                                </div>
+                                <div class="bannerIconBlock">
+                                    <img src="image/services-icon/school-management.png" alt="School Management">
+                                    <h5>School Management</h5>
+                                </div>
+                                <div class="bannerIconBlock">
+                                    <img src="image/services-icon/student-security.png" alt="School Security">
+                                    <h5>Student Security</h5>
+                                </div>
+                                <div class="bannerIconBlock">
+                                    <img src="image/services-icon/online-course.png" alt="Learning">
+                                    <h5>Learning</h5>
+                                </div>
+                            </div>
+                            <div class="sign-up-btn-panel">
+                                <!--<a class="sign-up-btn" href="https://web.mylyapp.com/SignUp.aspx" target="_blank"> Sign-up free</a>-->
+                                <a class="sign-up-btn" href="/register">Register Now</a>
+                            </div>
+                            </h3>
+                        </div>
+                        <div id="scroll-start" class="up-down-arrow storyHeroScroll"><a href="#scroll-start"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+                   
+                </div>
+        
+</div>
+{{ "<!-- /banner -->" | safeHTML }}

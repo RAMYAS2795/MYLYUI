@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang=en-US>
+{{ partial "homeheadscript.html" . }}
+{{ partial "head.html" . }}
+<body>
+<div class=site-page>
+{{ partial "navigation.html" . }}
+{{ partial "banner.html" . }}
+{{- block "main" . }}{{- end }}
+{{ partial "footer.html" . }}
+</div>
+{{ partial "homefooterscript.html" . }}
+</body>
+</html>
