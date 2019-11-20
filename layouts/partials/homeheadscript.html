@@ -1,4 +1,4 @@
-<head>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60009497-3"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag("js", new Date()); gtag("config", "UA-60009497-3");</script>
   <meta charset=UTF-8>
@@ -19,17 +19,18 @@
   <meta name=Googlebot content="Index, Follow" />
   <meta name=rating content=General />
 
-  <link href=/assets/css/style.css rel=stylesheet type=text/css />
-  <link href=/assets/css/bootstrap.min.css rel=stylesheet type=text/css />
-  <link href=/assets/css/font-awesome.min.css rel=stylesheet type=text/css />
-  <link href=/assets/css/home-responsive.css rel=stylesheet type=text/css />
-  <link href=/assets/css/flexcss.css rel=stylesheet type=text/css />
-  <link rel=stylesheet href=/assets/css/swiper.min.css />
-  <link href=/assets/css/animate.css rel=stylesheet type=text/css />
+  <link href="../css/style.css" rel=stylesheet type=text/css />
+  <link href="../css/bootstrap.min.css" rel=stylesheet type=text/css />
+  <link href="../css/font-awesome.min.css" rel=stylesheet type=text/css />
+  <link href="../css/home-responsive.css" rel=stylesheet type=text/css />
+  <link href="../css/flexcss.css" rel=stylesheet type=text/css />
+  <link rel=stylesheet href="../css/swiper.min.css" />
+  <link href="../css/animate.css" rel=stylesheet type=text/css />
+  <link href="../css/navstyle.css" rel=stylesheet type=text/css />
 
-  <script type=text/javascript src=/assets/js/jquery.min.js></script>
-  <script type=text/javascript src=/assets/js/bootstrap.min.js></script>
-  <script type=text/javascript src=/assets/js/custom.js></script>
+  <script type=text/javascript src="../js/jquery.min.js"></script>
+  <script type=text/javascript src="../js/bootstrap.min.js"></script>
+  <script type=text/javascript src="../js/custom.js"></script>
 
   <script type=text/javascript>jQuery(document).ready(function () { $(".storyHeroScroll").click(function (b) { b.preventDefault(); $("html,body").animate({ scrollTop: $(".home-tilrPaths").offset().top - -90 }, 2000) }); $(".storyHeroScroll1").click(function (b) { b.preventDefault(); $("html,body").animate({ scrollTop: $(".tilrPaths-section-third").offset().top - -120 }, 2000) }); $(".storyHeroScroll2").click(function (b) { b.preventDefault(); $("html,body").animate({ scrollTop: $(".tilrPaths-section-four-peter").offset().top - -120 }, 2000) }); $(".storyHeroScroll3").click(function (b) { b.preventDefault(); $("html,body").animate({ scrollTop: $(".tilrPaths-section-four-chirtina").offset().top - -110 }, 2000) }); $(".storyHeroScroll4").click(function (b) { b.preventDefault(); $("html,body").animate({ scrollTop: $(".technology-section").offset().top - +150 }, 2000) }) });</script>
   <script type=application/ld+json>
@@ -40,6 +41,28 @@
       "logo": "https://www.mylyapp.com/image/logo.png",
       }
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <!-- <script type=text/javascript>function downloadJSAtOnload() { var a = document.createElement("script"); a.src = "js/query.min.js"; a.src = "js/custom.js"; a.src = "js/bootstrap.min.js"; document.body.appendChild(a) } if (window.addEventListener) { window.addEventListener("load", downloadJSAtOnload, false) } else { if (window.attachEvent) { window.attachEvent("onload", downloadJSAtOnload) } else { window.onload = downloadJSAtOnload } }</script>-->
   <!-- <script>var loadDeferredStyles = function () { var b = document.getElementById("deferred-styles"); var a = document.createElement("div"); a.innerHTML = b.textContent; document.body.appendChild(a); b.parentElement.removeChild(b) }; var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame; if (raf) { raf(function () { window.setTimeout(loadDeferredStyles, 0) }) } else { window.addEventListener("load", loadDeferredStyles) }</script>-->
-</head>
+
+  <script>
+      $(document).ready(function(){ 
+        var touch 	= $('#resp-menu');
+        var menu 	= $('.menu');
+       
+        $(touch).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+        
+        $(window).resize(function(){
+          var w = $(window).width();
+          if(w > 767 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+          }
+        });
+        });
+      </script>

@@ -55,8 +55,6 @@ link = "#"
 
     # navigation
     [Languages.en.menu]
-    
-      
        
       # Dropdown menu
       [[Languages.en.menu.main]]

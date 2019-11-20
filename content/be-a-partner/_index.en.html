@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60009497-3"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-60009497-3');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Be a partner -Myly</title>
+    <link rel="icon" href="image/favicon.ico" type="image/gif" sizes="16x16">
+
+    {{ partial "pageheader.html" . }}
+
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery("#formMobileAppBrochure").validationEngine({
+                scroll: false, showOneMessage: true, promptPosition: "bottomLeft", "validateMobile": { "mobile": "validateMobile" }
+            });
+        });
+        jQuery(document).ready(function () {
+            jQuery("#formMFPMobileAppBrochure").validationEngine({
+                scroll: false, showOneMessage: true, promptPosition: "bottomLeft", "validateMobile": { "mobile": "validateMobile" }
+            });
+        });
+        function ReplaceChars(arg) {
+            if (arg.value.length > 0) {
+                if (arg.value.substr(0, 1) == 0) {
+                    arg.value = arg.value.replace(/^0+/g, '');
+                }
+            }
+        }
+        function ReplaceCharsOnPaste(arg) {
+            setTimeout(function () { ReplaceChars(arg) }, 30)
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://www.mylyapp.com/",
+        "logo": "https://www.mylyapp.com/image/logo.png",
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement":
+        [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "item":
+        {
+        "@id": "https://www.mylyapp.com/ ",
+        "name": "Home"
+        }
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "item":
+        {
+        "@id": "https://www.mylyapp.com/be-a-partner/",
+        "name": "be-a-partner"
+        }
+        }
+        ]
+        }
+    </script>
+</head>
+<style type="text/css">
+    p {
+        text-align: center;
+    }
+
+    body {
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        {{ partial "navigation.html" . }}
+        <div id="partner-panel">
+            <div class="partner-career"></div>
+            <div class="container">
+                <div class="sections-company" style="width:100%;">
+                    <div class="partner-panel-inner">
+                        <h1>Be a Partner</h1>
+                        <!--<p>myly is building a network of partners that understand the education market in their geography. Partners are willing to explore their networks, build new connections and ensure that the schools they pitch to, need and benefit from myly! We have two partnership programs: myly OEM Partner Program and myly Reseller Program.</p>-->
+                        <p>myly is building a network of partners that understand the education market in their geography. Partners are willing to explore their networks, build new connections and ensure that the schools they pitch to, need and benefit from myly.</p>
+                        <p></p>
+
+
+                        <br>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr />
+            </div>
+            <div id="p_form_cc" class="partner-ship-panel" data-id="pform">
+
+
+
+                <div class="container site-form-content">
+                    <h3 class="text-center" style="color:#000;"><strong>If you are looking to build an annual income business, you need the myly Partner program</strong></h3>
+                    <div class="row">
+                        <form id="formMFPMobileAppBrochure" action="">
+                            <div class="col-sm-6 left">
+                                <p>
+                                    myly Partner Program allows you to build a stable annually recurring income for your business. Under the Partner program, we provide you complete training on the product, how to sell and handle tough questions from schools. We provide you company identity which will give your sales a big boost.<br />
+                                    myly provides you support on your initiatives to get more schools! We are there with you at every step. Once you sell, we take care of all on-boarding, training and support for the customer. You move on to the next sale!
+                                </p>
+                            </div>
+                            <div class="col-sm-6 right">
+                                <h4>Fill up the form to get more details from our team.</h4>
+                                <div class="partner-form-item gray-form">
+                                    <div class="brocher-item">
+                                        <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="100" data-validation-engine="validate[required,custom[onlyLetterSp],maxSize[100]]" data-errormessage-value-missing="Name is required!" data-errormessage-custom-error="Enter valid name only!" id="name" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="brocher-item">
+                                        <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="100" data-validation-engine="validate[required,maxSize[100]]" data-errormessage-value-missing="Company name is required!" id="schoolname" name="schoolname" placeholder="Company name">
+                                    </div>
+                                    <div class="brocher-item">
+                                        <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="30" data-validation-engine="validate[required,maxSize[30]]" data-errormessage-value-missing="City is required!" id="city" name="city" placeholder="City">
+                                    </div>
+                                    <div class="brocher-item">
+                                        <input maxlength="15" class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" data-validation-engine="validate[required,funcCall[validateMobile]]" autocomplete="off" onpaste="ReplaceCharsOnPaste(this)" oninput="javascript: ReplaceChars(this);" data-errormessage-value-missing="Mobile number is required!" id="number" placeholder="Mobile">
+                                    </div>
+                                    <div class="brocher-item">
+                                        <input class="form-control referring-box referring-fm" data-validation-engine="validate[required,custom[email],maxSize[50]]" data-errormessage-value-missing="Email is required!" data-errormessage-custom-error="Let me give you a hint: someone@nowhere.com" id="email" placeholder="Email ID">
+                                    </div>
+                                  
+                                    <div class="brocher-item">
+                                        <select class="form-control referring-box referring-fm" id="enquirer" data-prompt-position="bottomLeft" data-validation-engine="validate[required]" data-errormessage-value-missing="Your role is required!" style="color: #999 !important;">
+                                            <option value="" disabled="disabled" selected="selected">Your role in school</option>
+                                            <option value="School Owner">School Owner</option>
+                                            <option value="Principal">Principal</option>
+                                            <option value="Teacher">Teacher</option>
+                                            <option value="Parent">Parent</option>
+                                            <option value="Student">Student</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <p style="font-size:9px">By submitting this form, you allow us to contact you for myly services.</p>
+
+                                    <button id="submitMFPMobileAppBrochure" class="-options -secondary -less-padding font-incress">I am interested</button>
+                                    <!--<a href="#" target="_blank" id="downloadFileLink" download=download></a>-->
+                                </div>
+                            </div>
+                        </form>
+                    </div><br>
+                    <br>
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+
+            <!--<div id="p_form_cc" class="partner-form" data-id="pform" style="background:none;">
+
+                    <div class="container  site-form-content">
+                        <h3><strong style="color:#000;">If you are looking to resell myly branded solution, you need the myly Reseller Program</strong></h3>
+                        <div class="row">
+                            <div class="col-sm-6 left">
+                                <p>myly Reseller Program allows you to build a stable annually recurring income for your business. Buy from us at a fixed price and sell in your territory at your price.</p>
+                                <p>Under the Reseller program, we provide you complete training on the product, how to sell and handle tough questions from schools. We provide you company identity which will give your sales a big boost.</p>
+                                <p>myly provides you support on your initiatives to get more schools! We are there with you at every step. Once you sell, we take care of all on-boarding, training and support for the customer. You move on to the next sale!</p>
+                            </div>
+                            <div class="col-sm-6 right">
+                                <form id="formMFPMobileAppBrochure" action="">
+                                    <div class="col-sm-12">
+                                        <h4 class="center-align">Fill up the form to download the myly Reseller Program brochure</h4>
+                                        <div class="partner-form-item">
+                                            <div class="brocher-item">
+                                                <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" data-validation-engine="validate[required,custom[onlyLetterSp],maxSize[50]]" data-errormessage-value-missing="Name is required!" data-errormessage-custom-error="Enter valid name only!" id="mfpname" name="name" placeholder="Name">
+                                            </div>
+                                            <div class="brocher-item">
+                                                <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" data-validation-engine="validate[required,maxSize[100]]" data-errormessage-value-missing="Company name is required!" id="mfpschoolname" name="schoolname" placeholder="Company name">
+                                            </div>
+                                            <div class="brocher-item">
+                                                <input maxlength="10" class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" data-validation-engine="validate[required,funcCall[validateMobile]]" autocomplete="off" onpaste="ReplaceCharsOnPaste(this)" oninput="javascript: ReplaceChars(this);" data-errormessage-value-missing="Mobile number is required!" id="mfpnumber" placeholder="Mobile">
+                                            </div>
+                                            <div class="brocher-item">
+                                                <input class="form-control referring-box referring-fm" data-validation-engine="validate[required,custom[email],maxSize[50]]" data-errormessage-value-missing="Email is required!" data-errormessage-custom-error="Let me give you a hint: someone@nowhere.com" id="mfpemail" placeholder="Email ID">
+                                            </div>
+                                            <p style="font-size:9px; text-align:left">By submitting this form, you allow us to contact you for myly services.</p>
+                                        </div>
+                                        <button id="submitMFPMobileAppBrochure" class="-options -secondary -less-padding font-incress">I am interested</button>
+                                        <a href="#" target="_blank" id="downloadFileLink" download=download></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="sections-company" style="width:100%;">
+                            <div class="partner-panel-inner">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                  <div class="container">
+                    <div class="row">
+
+            </div>
+                  </div>
+                </div>-->
+
+        </div>
+        {{ partial "footer.html" . }}
+    </div>
+   
+   
+    {{ partial "pagefooter.html" . }}
+
+</body>
+</html>

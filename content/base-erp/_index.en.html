@@ -1,186 +1,64 @@
-
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="en-US">
 <head>
-    
-    {{ partial "pageheader.html" . }}
+{{ partial "pageheader.html" . }}
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Fees Management",
+    "description": "myly is a school fees management software that helps plan, publish, send reminders and collect all fees on a single platform.",
+    "brand": {
+    "@type": "Thing",
+    "name": "Myly"
+    }
+    }
+</script>
 
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "myly Base ERP",
-        "description": "myly school ERP management system, helps schools in student database management allowing saving of time and cost via better administration and automation of daily tasks.",
-        "brand": {
-        "@type": "Thing",
-        "name": "Myly"
-        }
-        }
-    </script>
-
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement":
-        [
-        {
-        "@type": "ListItem",
-        "position": 1,
-        "item":
-        {
-        "@id": "https://www.mylyapp.com/ ",
-        "name": "Home"
-        }
-        },
-        {
-        "@type": "ListItem",
-        "position": 2,
-        "item":
-        {
-        "@id": " https://www.mylyapp.com/base-erp/",
-        "name": "Base-ERP"
-        }
-        }
-        ]
-        }
-    </script>
-
+<!-- <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/ ",
+    "name": "Home"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/fees/",
+    "name": "Fees-management"
+    }
+    }
+    ]
+    }
+</script> -->
 </head>
 <style type="text/css">
-    p {
-        text-align: center;
-    }
+p {
+    text-align: center;
+}
 
-    body {
-        text-align: center;
-    }
-
-    .tech-slide-panal-right {
-        margin: 48px 0 0;
-    }
+body {
+    text-align: center;
+}
 </style>
+
+
 <body>
     <div id="wrapper">
-        <header class="header">
-            <div class="headerWidth">
-                <div class="grid -layout-auto">
-                    <div class="col header-left"> <a href="/home" class="logoLink"><img src="image/logo.png" alt="myly logo"></a> </div>
-                    <div class="col header-right">
-                        <div class="navToggle">
-                            <svg height="24" viewBox="0 0 24 24" width="24" stroke-width="2" stroke-linecap="round" class="navToggle-icon -open">
-                                <line x1="2" x2="22" y1="6.5" y2="6.5"></line>
-                                <line x1="7" x2="22" y1="12.5" y2="12.5"></line>
-                                <line x1="2" x2="22" y1="18.5" y2="18.5"></line>
-                                <path d="M50,50
-             L100,100"
-                                      style="stroke:#660000; fill:none;" />
-                            </svg> </svg> <img src="image/cancel.png" class="navToggle-icon -close" />
-                        </div>
-                        <div class="nav">
-                            <nav role=navigation class=nav-menu>
-                                <ul class=sb-menu-center>
-                                    <li id=sb-menu-app-li class=dropdown>
-                                        <a class=dropdown-toggle data-toggle=dropdown href=#>Solutions</a>
-                                        <script type="text/javascript">
-                                            /*<![CDATA[*/
-                                            $("ul.sb-menu-center li#sb-menu-app-li").hover(function () {
-                                                $(this).find(".dropdown-menu").stop(true, true).delay(200).fadeIn(500);
-                                                $(this).addClass('open');
-                                            });
-                                            /*]]>*/
-                                            $(document).click(function (e) {
-                                                //e.stopPropagation();
-                                                var container = $("li#sb-menu-app-li");
-                                                //check if the clicked area is dropDown or not
-                                                if (container.has(e.target).length == 0) {
-                                                    $(container).find(".dropdown-menu").hide();
-                                                    $(container).parent('.dropdown').removeClass('open');
-                                                }
-                                            });
-                                        </script>
-                                        <script type="text/javascript">
-                                            $(document).ready(function () {
-                                                $("li.sub-menu > a").click(function () {
-                                                    if ($(this).parent().hasClass('openSub')) {
-                                                        $(this).parent().removeClass('openSub');
-                                                        $(this).next('.d').slideUp();
-                                                    } else {
-                                                        $("li.sub-menu").find('.d').slideUp();
-                                                        $("li.sub-menu").removeClass('openSub');
-                                                        $(this).parent().addClass('openSub');
-                                                        $(this).next('.d').slideDown();
-                                                    }
-                                                });
-                                            });
-                                        </script>
-                                        <ul id=sb-menu-app class="dropdown-menu dropdown-menu-center">
-                                            <li class=sub-menu>
-                                                <a href=javascript:;>School App</a>
-                                                <ol class=d>
-                                                    <li class=li-option-base-erp><a href=/myly-admin-app-for-teachers>For School Staff </a></li>
-                                                    <li class=li-option-base-erp><a href=/myly-app-for-parents-and-students>For Parents </a></li>
-                                                </ol>
-                                            </li>
-                                            <li class=sub-menu>
-                                                <a href=javascript:;>School Management</a>
-                                                <ol class=d>
-                                                    <!--<li class=li-option-base-erp><a href=/admission-crm>Admission CRM</a></li>-->
-                                                    <li class=li-option-base-erp><a href=/admission>Admission Management</a></li>
-                                                    <li class=li-option-base-erp><a href=/base-erp>School Data Management</a></li>
-                                                    <li class=li-option-base-erp><a href=/Attendance-and-Leave>Attendance &amp; Leave</a></li>
-                                                    <li class=li-option-base-erp><a href=/fees> Fees Management </a></li>
-                                                    <li class=li-option-base-erp><a href=/exam-result> Exam-Result Management </a></li>
-                                                    <li class=li-option-base-erp><a href=/time-table> Timetable Management </a></li>
-                                                    <li class=li-option-base-erp><a href=/library> Library Management </a></li>
-                                                    <li class=li-option-base-erp><a href=/franchisee> Franchisee Management </a></li>
-                                                </ol>
-                                            </li>
-                                            <!--											<li class=sub-menu>
-                                                                    <a href=javascript:;>Admission CRM</a>
-                                                                </li>-->
-                                            <li class=sub-menu>
-                                                <a href=javascript:;>Student Security</a>
-                                                <ol class=d>
-                                                    <li class=li-option-base-erp><a href=/transport-solution>School Bus GPS Tracking</a></li>
-                                                   <!-- <li class=li-option-base-erp><a href=#>School Bus RFID Attendance</a></li>-->
-                                                </ol>
-                                            </li>
-                                            <!--											<li class=sub-menu>
-                                                                    <a href=javascript:;>Learning</a>
-                                                                    <ol class=d>
-                                                                        <li class=li-option-base-erp><a href=/online-assessment>Online Assessment</a></li>
-                                                                        <li class=li-option-base-erp><a href=#>Student Portal </a></li>
-                                                                        <!--<li class=li-option-base-erp><a href=#>Learning Management System</a></li>
-                                                                        <li class=li-option-base-erp><a href=#>Third party content integration</a></li>
-                                                                    </ol>
-                                                                </li>-->
-                                        </ul>
-                                    </li>
-                                    <li><a href=/news>News</a></li>
-                                    <li><a href=/blog target=_blank>Blog</a></li>
-                                    <li>
-                                        <div class=nav-callout>
-                                            <div class=dropdown>
-                                                <button class="-options -secondary -less-padding dropdown-toggle btn-grad" type=button data-toggle=dropdown> Get started <span class=caret></span></button>
-                                                <ul class="dropdown-menu dropdown-menu-btn" data-dropdown-in=flipInX data-dropdown-out=flipOutX>
-                                                    <li><a href=https://web.mylyapp.com/ target=_blank>Login</a></li>
-                                                    <li><a href="/register">Register</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-underline"></div>
-        </header>
+        {{ partial "navigation.html" . }}
         <!--<div class="base-erp-banner"></div>-->
-        <div class="hero-panel"><img src="image/hero-base-erp.jpg" alt="Base ERP" /></div>
+        <div class="hero-panel"><img src="/image/hero-base-erp.jpg" alt="Base ERP" /></div>
 
 
 
@@ -207,15 +85,15 @@
                 <div class="col-xs-12 col-sm-10 col-md-5 hidden-xs visible-sm visible-md visible-lg">
                     <div class="iph-mobile right-align tofade animated fadeInUp">
                         <p style="margin:0;">
-                            <img alt="hand-iphone" src="image/webpanel-three.png" class="alignnone" />
+                            <img alt="hand-iphone" src="/image/webpanel-three.png" class="alignnone" />
                             <div id="mobile" class="mobile lapi-fms">
                                 <div class="tech-slide-panal">
-                                    <div data-index="1"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="image/student-data-management.png" alt="Student Data Management" /> </div>
-                                    <div data-index="2"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="image/teacher-data-management.png" alt="Teacher Data Management" /> </div>
-                                    <div data-index="3"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="image/access-management.png" alt="Access Management" /> </div>
-                                    <div data-index="4"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="image/student-promotion.png" alt="Student Promotion" /> </div>
-                                    <div data-index="5"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="image/holiday-calendar.png" alt="Holiday Calendar" /> </div>
-                                    <div data-index="6"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="image/group-and-club-management.png" alt="Group &amp; Club Management" /> </div>
+                                    <div data-index="1"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/student-data-management.png" alt="Student Data Management" /> </div>
+                                    <div data-index="2"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/teacher-data-management.png" alt="Teacher Data Management" /> </div>
+                                    <div data-index="3"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/access-management.png" alt="Access Management" /> </div>
+                                    <div data-index="4"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/student-promotion.png" alt="Student Promotion" /> </div>
+                                    <div data-index="5"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/holiday-calendar.png" alt="Holiday Calendar" /> </div>
+                                    <div data-index="6"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/group-and-club-management.png" alt="Group &amp; Club Management" /> </div>
                                 </div>
                             </div>
                         </p>
@@ -260,32 +138,32 @@
                         <div class="col-slide">
                             <h4 class="feature-heading"><strong>Student Data Management</strong></h4>
                             <p class="features-text">Collect and manage multiple data fields about each student. Search for student information using any data field, get app login report, promote or migrate students to different classes and generate transfer certificate for each student.</p>
-                            <img src="image/student-data-management-res.png" alt="Student Data Management" />
+                            <img src="/image/student-data-management-res.png" alt="Student Data Management" />
                         </div>
                         <div class="col-slide">
                             <h4 class="feature-heading"><strong>Teacher Data Management</strong></h4>
                             <p class="features-text">Store and manage all your teacher and staff data. Classify your staff in over 10 different profiles like Academic Coordinator, Exam Coordinator, Accountant, Event Coordinator, Sports Coordinator etc. giving them access only to specific features.</p>
-                            <img src="image/teacher-data-management-res.png" alt="Teacher Data Management" />
+                            <img src="/image/teacher-data-management-res.png" alt="Teacher Data Management" />
                         </div>
                         <div class="col-slide">
                             <h4 class="feature-heading"><strong>Access Management</strong></h4>
                             <p class="features-text">The Access Management feature allows you to control which teacher or coordinator will have access to which modules. For example, you can only allow Exam coordinators to schedule exams and restrict teachers for the same.</p>
-                            <img src="image/access-management-res.png" alt="Access Management" />
+                            <img src="/image/access-management-res.png" alt="Access Management" />
                         </div>
                         <div class="col-slide">
                             <h4 class="feature-heading"><strong>Student Promotion</strong></h4>
                             <p class="features-text">Student promotion allows you to promote or transfer students from one class to another. You may promote all students of a class or select a few as needed.</p>
-                            <img src="image/student-promotion-res.png" alt="Attendance Management" />
+                            <img src="/image/student-promotion-res.png" alt="Attendance Management" />
                         </div>
                         <div class="col-slide">
                             <h4 class="feature-heading"><strong>Holiday Calendar</strong></h4>
                             <p class="features-text">Plan and create your school's holiday calendar in advance and share with the parents and students on their app. Holidays sync with your attendance management automatically. You can add, edit or delete holidays during the session too.</p>
-                            <img src="image/holiday-calendar-res.png" alt="Holiday Calendar" />
+                            <img src="/image/holiday-calendar-res.png" alt="Holiday Calendar" />
                         </div>
                         <div class="col-slide">
                             <h4 class="feature-heading"><strong>Group &amp; Club Management</strong></h4>
                             <p class="features-text">Students from a class can be put in different groups based on various parameters. Schools also have clubs in which students from different classes participate. With myly, you can send messages, events and images to different groups and clubs.</p>
-                            <img src="image/group-and-club-management-res.png" alt="Group &amp; Club Management" />
+                            <img src="/image/group-and-club-management-res.png" alt="Group &amp; Club Management" />
                         </div>
                     </div>
                 </div>
@@ -298,17 +176,17 @@
             <br>
             <div class="row">
                 <div class="col-sm-4 text-center">
-                    <i class="icon-fms-features" aria-hidden="true"><img src="image/bace-student.jpg" alt="Student Lifecycle Management" /></i>
+                    <i class="icon-fms-features" aria-hidden="true"><img src="/image/bace-student.jpg" alt="Student Lifecycle Management" /></i>
                     <h3>Student Lifecycle Management</h3>
                     <p>Manage all activities and records of a student for the complete duration that they were a part of your school for. This may include their laurels, activities, results, disciplinary records etc.</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <i class="icon-fms-features" aria-hidden="true"><img src="image/bace-email.jpg" alt="Email &amp; SMS Integration" /></i>
+                    <i class="icon-fms-features" aria-hidden="true"><img src="/image/bace-email.jpg" alt="Email &amp; SMS Integration" /></i>
                     <h3>Email &amp; SMS Integration</h3>
                     <p>myly features in-built Email &amp; SMS gateway integration to send info to non-app users. Send critical messages via SMS in addition to the app. Turn on/off SMS for many types of information.</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <i class="icon-fms-features" aria-hidden="true"><img src="image/bace-dashboard.jpg" alt="Dashboard, Reports &amp; Analytics" /></i>
+                    <i class="icon-fms-features" aria-hidden="true"><img src="/image/bace-dashboard.jpg" alt="Dashboard, Reports &amp; Analytics" /></i>
                     <h3>Dashboard, Reports &amp; Analytics</h3>
                     <p>myly Base ERP features an automatic reporting service to send key information to School Admin by email. Track app engagement, teacher's communication, fees collection details & more.</p>
                 </div>
@@ -317,17 +195,17 @@
             <br>
             <div class="row">
                 <div class="col-sm-4 text-center">
-                    <i class="icon-fms-features" aria-hidden="true"><img src="image/secure-data.jpg" alt="Secure Data Storage" /></i>
+                    <i class="icon-fms-features" aria-hidden="true"><img src="/image/secure-data.jpg" alt="Secure Data Storage" /></i>
                     <h3>Secure Data Storage</h3>
                     <p>myly is hosted on some of the world's most secure servers. That means you don't have to worry about your data security and availability in the unforeseen events of virus attacks, floods, power outages etc.</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <i class="icon-fms-features" aria-hidden="true"><img src="image/bace-back-up.jpg" alt="Data Backup" /></i>
+                    <i class="icon-fms-features" aria-hidden="true"><img src="/image/bace-back-up.jpg" alt="Data Backup" /></i>
                     <h3>Data Backup</h3>
                     <p>We still take internal data back-up of your system for that rarest of the rare situations. You can take a copy of you data back-up as often as you want using your School Admin login.</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <i class="icon-fms-features" aria-hidden="true"><img src="image/time.png" alt="Access anywhere, anytime" /></i>
+                    <i class="icon-fms-features" aria-hidden="true"><img src="/image/time.png" alt="Access anywhere, anytime" /></i>
                     <h3>Access anywhere, anytime</h3>
                     <p>Since myly is hosted on the cloud, you can access the system from anywhere in the world, at anytime. All you need is a computer or smart-phone connected to the Internet.</p>
                 </div>
@@ -386,7 +264,7 @@
 
                 </div>
                 <div class="col-sm-6 col-clear">
-                    <div class="fms-mobile-screen"><img src="image/fms-screen.png" alt="fms-screen" /></div>
+                    <div class="fms-mobile-screen"><img src="/image/fms-screen.png" alt="fms-screen" /></div>
                 </div>
             </div>
         </section>
@@ -395,7 +273,7 @@
             <div class="container">
                 <div class="footer-section">
                     <div class="footer-right-side">
-                        <div class="footer-logo"><img src="image/logo1.png"></div>
+                        <div class="footer-logo"><img src="/image/logo1.png"></div>
                         <a class="trm-policy" href="/privacy">Privacy Policy</a> <span style="float: left;padding: 0 5px;">|</span> <a class="trm-policy" href="/terms">Terms Of Use</a>
                         <div class="clearfix"></div>
                         <p> © 2018-19 EduCommerce Technologies Pvt. Ltd. All rights reserved. </p>
